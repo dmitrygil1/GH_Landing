@@ -816,13 +816,14 @@ textarea:focus::placeholder {
 .intro__wrapper > svg {
   display: block;
   margin-left: 121px;
+  overflow: hidden;
 }
 
 .intro__wrapper::before {
   content: '';
   position: absolute;
   top: -142px;
-  right: -300px;
+  right: -2%;
   background: -o-radial-gradient(46.41% 50%, 42.59% 42.05%, #FFFFFF 0%, rgba(255, 251, 251, 0.61) 55.73%, rgba(255, 255, 255, 0) 100%);
   background: radial-gradient(42.59% 42.05% at 46.41% 50%, #FFFFFF 0%, rgba(255, 251, 251, 0.61) 55.73%, rgba(255, 255, 255, 0) 100%);
   -webkit-transform: rotate(-180deg);
@@ -892,7 +893,7 @@ textarea:focus::placeholder {
 
 .intro__bg img:nth-child(3) {
   bottom: 0;
-  right: -225px;
+  right: -2%;
 }
 
 .footer {
