@@ -697,7 +697,7 @@ textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 65px;
-  background-image: url("/images/support/support-bg-1.png");
+  background-image: url("./images/support/support-bg-1.png");
   background-repeat: no-repeat;
   background-position: left bottom 130px;
 }
@@ -777,15 +777,15 @@ textarea:focus::placeholder {
 }
 
 .support-social__link-ok {
-  background-image: url("/images/ok.png");
+  background-image: url("./images/ok.png");
 }
 
 .support-social__link-tg {
-  background-image: url("/images/tg.png");
+  background-image: url("./images/tg.png");
 }
 
 .support-social__link-vk {
-  background-image: url("/images/vk.png");
+  background-image: url("./images/vk.png");
 }
 
 .intro {
@@ -949,13 +949,13 @@ textarea:focus::placeholder {
 .footer__tel::before {
   width: 20px;
   height: 20px;
-  background-image: url("/images/icons/call.png");
+  background-image: url("./images/icons/call.png");
 }
 
 .footer__email::before {
   width: 16px;
   height: 15px;
-  background-image: url("/images/icons/letter.png");
+  background-image: url("./images/icons/letter.png");
 }
 
 .footer__btn {
