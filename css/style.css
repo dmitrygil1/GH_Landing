@@ -1333,9 +1333,17 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     line-height: 16px;
     width: 80vw
   }
-  svg.intro__wrapper__mobile {
-  
-    
+.support__title {
+  font-size: 24px;
+  line-height: 34px;
+}
+.intro__bg img:nth-child(3) {
+  scale: 0.7;
+  bottom: -25px;
+  right: -100px
+  }
+  .intro__item-3 {
+    width: 80vw;
   }
 }  
 
