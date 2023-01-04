@@ -1309,5 +1309,8 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     scale: 1.5;
     margin-top: 50px;
   }
+  .support-social {
+    padding-top: 90vw;
+  }
 }  
 
