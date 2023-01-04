@@ -628,7 +628,7 @@ textarea:focus::placeholder {
 .hero__content {
   position: relative;
   z-index: 1;
-  width: 575px;
+  width: 50%; /*575px было в пк*/
   padding: 200px 0 235px;
   margin-left: 100px;
 }
@@ -1008,3 +1008,23 @@ textarea:focus::placeholder {
   -webkit-box-shadow: 5px 4px 13px rgba(123, 184, 151, 0.95);
           box-shadow: 5px 4px 13px rgba(123, 184, 151, 0.95);
 }
+
+
+
+@media ( max-width: 1440px ) {
+  .intro__item.intro__item-2 {
+    left: auto;
+    right: -2%;
+  }
+  .intro__wrapper > svg {
+    margin-left: auto;
+    max-width: 100%;
+  }
+  .hero__img {
+    width: 50%;
+  }
+  .wrapper {
+    overflow: hidden;
+  }
+}
+  
