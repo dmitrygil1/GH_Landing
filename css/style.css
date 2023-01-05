@@ -850,15 +850,17 @@ textarea:focus::placeholder {
 
 /* Секция с анимацией "Пить кофе..." по path*/
 .intro__wrapper__text {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 87px;
   padding-top: 90px;
-  font-size: 3rem;
   text-transform: uppercase;
   width: 100%;
   height: 100%;
   color: rgb(255, 255, 255);
 }
 .char {
-offset-path: path('M0 1C139 1 419.3 1 428.5 1C440 1 517 17.5 526 86C533.2 140.8 483 162.833 457 167C375 179.167 201 208.7 161 229.5C111 255.5 80 312 75 327.5C70 343 51 395 96.5 485.5C132.9 557.9 241 584.667 290.5 589C361.5 595.215 518.3 574.3 601.5 541.5C705.5 500.5 781.23 444.568 841 433C903 421 938 454.5 958.5 485.5C996.527 543.004 1023.33 715.5 1023 802.5');
+offset-path: path('M35 1C174 1 454.3 1 463.5 1C512 0.999987 552 38.5 561 107C568.2 161.8 506 213.333 480 217.5C463 221 244.187 219.5 190 219.5C93 219.5 70.6423 236.368 35 277C-15 334 -6.00005 422.5 35 462C66.0085 491.874 116.5 532.5 268 532.5C339.271 532.5 530.277 516.666 610 501C724.5 478.5 760.23 457.068 820 445.5C956.5 419.081 979.999 449.5 1030.5 511.5C1074.04 564.953 1058.33 715.5 1058 802.5');
 offset-distance: calc(var(--char-index) * 2.5rem);
 position: absolute;
 animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
@@ -866,11 +868,10 @@ animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(v
 
 @keyframes loop {
 100% {
-  offset-distance: calc((var(--char-index) * 2.5rem) + 1000px);
-  color: rgb(253, 255, 105);
+  offset-distance: calc((var(--char-index) * 3rem) + 2000px);
 }
-700% {
-  offset-distance: calc((var(--char-index) * 2.5rem) + 1690px);
+50% {
+  offset-distance: calc((var(--char-index) * 3rem) + 1000px);
 }
 }
 
@@ -1094,7 +1095,33 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .intro__item-2 {
     top: 185px;
   }
+  
+  .intro__bg img:nth-child(3) {
+    right: -4%;
+  }
+
+  /*Настройка блока с плавающим текстом*/
+
+  .char {
+  offset-path: path('M29.9342 1C147.504 1 384.59 1 392.372 1C433.395 0.999987 467.228 38.499 474.841 106.997C480.931 161.796 428.32 213.328 406.328 217.494C391.949 220.994 206.871 219.494 161.038 219.494C78.9923 219.494 60.0815 236.361 29.9342 276.993C-12.3573 333.991 -4.74485 422.489 29.9342 461.988C56.1621 491.861 98.8693 532.486 227.012 532.486C287.296 532.486 448.854 516.652 516.286 500.987C613.134 478.487 643.355 457.056 693.91 445.488C809.366 419.069 829.242 449.488 871.957 511.486C908.783 564.938 902.75 752.002 902.468 839');
+  offset-distance: calc(var(--char-index) * 3rem);
+  position: absolute;
+  animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
+  }
+  .intro__wrapper__text{
+    padding-left: 20px;
+  }
+
+  @keyframes loop {
+  100% {
+    offset-distance: calc((var(--char-index) * 3rem) + 1500px);
+  }
+  50% {
+    offset-distance: calc((var(--char-index) * 3rem) + 800px);
+  }
+  }
 }
+
 @media ( max-width: 1000px ) {
   .header__btn.js_btn_support {
     margin: 0px 20px 25px 20px;
@@ -1125,6 +1152,42 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     top: 16px;
     left: 374px;
   }
+  
+  .intro__item.intro__item-3 {
+    width: 440px;
+  }
+
+  .intro__bg img:nth-child(3) {
+    right: -10%;
+  }
+
+  /*Настройка блока с плавающим текстом*/
+  .intro__wrapper__text {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 87px;
+    padding-top: 90px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+  }
+  .char {
+  offset-path: path('M26.566 1C130.45 1 339.937 1 346.813 1C383.061 0.999987 412.956 38.499 419.682 106.997C425.063 161.796 378.576 213.328 359.145 217.494C346.44 220.994 182.906 219.494 142.408 219.494C69.9134 219.494 53.204 236.361 26.566 276.993C-10.8024 333.991 -4.07611 422.489 26.566 461.988C49.7408 491.861 87.4765 532.486 200.703 532.486C253.969 532.486 396.72 516.652 456.303 500.987C541.876 478.487 568.58 457.056 613.25 445.488C715.266 419.069 732.828 449.488 770.571 511.486C803.11 564.938 797.779 752.002 797.53 839');
+  offset-distance: calc(var(--char-index) * 2rem);
+  position: absolute;
+  animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
+  }
+
+  @keyframes loop {
+  100% {
+    offset-distance: calc((var(--char-index) * 2rem) + 2000px);
+  }
+  50% {
+    offset-distance: calc((var(--char-index) * 2rem) + 1000px);
+  }
+  }
+  
 }
   @media (max-width: 770px) {
     svg.intro__wrapper__bigtext{
@@ -1208,6 +1271,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     }
     .intro__bg img:nth-child(3) {
       bottom: -2px;
+      right: -20%;
     }
     .intro__item.intro__item-1 {
       width: 243px;
@@ -1249,6 +1313,29 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .support__form {
     max-width: 100vw;
   }
+
+  /*Настройка блока с плавающим текстом*/
+  .intro__wrapper__text {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 87px;
+    
+  }
+  .char {
+  offset-path: path('M21.9397 1C107.026 1 278.605 1 284.237 1C313.925 0.999989 338.41 31.3182 343.92 86.6993C348.327 131.004 310.252 172.668 294.337 176.037C283.931 178.867 149.989 177.654 116.82 177.654C57.4432 177.654 43.7574 191.291 21.9397 224.142C-8.66671 270.225 -3.15756 341.776 21.9397 373.711C40.9209 397.864 71.8282 430.709 164.566 430.709C208.193 430.709 325.113 417.908 373.914 405.242C444.002 387.051 465.874 369.724 502.461 360.371C586.016 339.012 600.401 363.605 631.314 413.731C657.965 456.947 648.351 578.662 648.147 649');
+  offset-distance: calc(var(--char-index) * 2.3rem);
+  position: absolute;
+  animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
+  }
+  
+  @keyframes loop {
+  100% {
+    offset-distance: calc((var(--char-index) * 2.5rem) + 1000px);
+  }
+  50% {
+    offset-distance: calc((var(--char-index) * 2.5rem) + 500px);
+  }
+  }
 }
 
 @media (max-width: 650px) {
@@ -1279,7 +1366,11 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .intro__item-3 {
     left: 50px;
   }
+  .char {
+    offset-path: path('M19.1001 0.999988C88.5847 0.999988 228.708 1.19307 233.303 0.999988C269 -0.500007 312.501 29.6188 317 85C320.599 129.305 289 162 241.551 176.037C214.754 183.964 123.356 173.541 96.5829 177.654C45.4998 185.5 38.9999 193.5 19.1001 224.142C-9.45372 268.109 -1.39527 327.565 19.1002 359.5C34.601 383.653 55.2668 415.5 131 415.5C166.628 415.5 268.066 421.635 306.536 405.242C347 388 372.652 363.814 411.513 360.371C466.5 355.5 502.522 385.5 516.74 413.731C538.504 456.947 530.653 578.662 530.487 649');
+  }
 }
+
 @media (max-width: 600px) {
   svg.intro__wrapper__liltext {
   display: none;
@@ -1307,6 +1398,12 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   }
   .support__content {
     width: 90%;
+  }
+  .char {
+    offset-path: path('M17.5502 1.05345C79.6582 1.05345 204.906 1.24651 209.013 1.05345C240.92 -0.446421 279.803 29.6699 283.824 85.0465C287.042 129.348 258.797 162.04 216.385 176.076C192.433 184.003 110.739 173.581 86.8074 177.693C41.1473 185.538 35.3374 193.538 17.5502 224.177C-7.97225 268.14 -0.769297 327.591 17.5504 359.524C31.4056 383.675 49.8775 415.519 117.571 415.519C149.416 415.519 240.086 421.654 274.472 405.262C310.64 388.022 333.569 363.837 368.304 360.395C417.454 355.524 449.651 385.522 462.36 413.751C481.814 456.963 474.796 578.668 474.647 649');
+  }
+  .intro__wrapper__text {
+    padding-left: 0;
   }
 }  
 @media (max-width: 500px) {
@@ -1367,7 +1464,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
 .intro__bg img:nth-child(3) {
   scale: 0.7;
   bottom: -25px;
-  right: -130px
+  right: -170px
   }
   .intro__item-3 {
     width: 80vw;
