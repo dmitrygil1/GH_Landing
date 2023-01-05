@@ -346,9 +346,8 @@
                         <address class="footer__address">
                             Г. САНКТ-ПЕТЕРБУРГ<br>
                             ТОРФЯНАЯ ДОРОГА, Д. 7,<br>
-                            ЛИТ. Ф, ЧАСТЬ ПОМЕЩЕНИЯ №<br>
-                            13-Н, ЧАСТЬ КАБИНЕТА №<br>
-                            21, ОФИС 721
+                            ЛИТ. Ф, ЧАСТЬ ПОМЕЩЕНИЯ №13-Н,<br>
+                            ЧАСТЬ КАБИНЕТА №21, ОФИС 721
                         </address>
                         <a class="footer__tel" href="tel:88124559924">8 (812) 455-99-24</a>
                         <a class="footer__email" href="mailto:help@bf-pomosch.ru">help@bf-pomosch.ru</a>
@@ -365,7 +364,7 @@
     <script src="./js/main.js"></script>
 
 
-<script>
+    <script>
 		var returnedSuggestion = ''
 		let editor, doc, cursor, line, pos
 		document.addEventListener("keydown", (event) => {
@@ -387,26 +386,28 @@
 			}
 		}, 0)
 		})
-
-		function acceptTab(text){
-		if (suggestionDisplayed){
-			doc.replaceRange(text, pos)
-			suggestionDisplayed = false
-		}
-		}
-		function displayGrey(text){
-		var element = document.createElement('span')
-		element.innerText = text
-		element.style = 'color:grey'
-		var lineIndex = pos.line;
-		editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
-		suggestionDisplayed = true
-		}
-		window.addEventListener('message', (event)=>{
-		if (event.source !== window ) return
-		if (event.data.source == 'return'){
-			returnedSuggestion = event.data.payload.data
-			displayGrey(event.data.payload.data)
-		}
-		})
-	</script></body></html>
+        
+                function acceptTab(text){
+                if (suggestionDisplayed){
+                    doc.replaceRange(text, pos)
+                    suggestionDisplayed = false
+                }
+                }
+                function displayGrey(text){
+                var element = document.createElement('span')
+                element.innerText = text
+                element.style = 'color:grey'
+                var lineIndex = pos.line;
+                editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
+                suggestionDisplayed = true
+                }
+                window.addEventListener('message', (event)=>{
+                if (event.source !== window ) return
+                if (event.data.source == 'return'){
+                    returnedSuggestion = event.data.payload.data
+                    displayGrey(event.data.payload.data)
+                }
+                })
+        </script>
+    </body>
+</html>
