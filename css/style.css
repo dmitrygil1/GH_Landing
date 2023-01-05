@@ -1469,6 +1469,40 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .intro__item-3 {
     width: 80vw;
   }
+  .intro__item.intro__item-1{
+    top: 160px;
+  }
+  .intro__item.intro__item-2 {
+    top: 320px;
+  }
+  .intro__item.intro__item-3 {
+    width: 340px;
+  }
+  .intro__wrapper::before {
+    right: -330px;
+  }
+ 
+  .intro__wrapper__text {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 87px;
+    padding-top: 100px;
+  }
+  
+  .char {
+  offset-path: path('M17.1847 1.14516C65.6081 1.14516 184.968 1.30187 188.17 1.14516C237.506 -1.26929 276.018 26.6136 279.153 71.5662C281.661 107.528 243.913 135.406 195.859 143.838C176.307 147.268 94.2611 158.584 75.4018 160.701C32.473 165.519 -0.821872 204.607 1.07738 244.415C3.19263 288.75 40.5827 337.593 95.167 337.593C119.996 337.593 187.245 328.154 214.054 314.848C242.253 300.853 267.273 299.778 293.89 305.244C340.663 314.848 357.024 347.975 366.933 370.89C382.1 405.968 373.683 598.907 373.567 656');
+  offset-distance: calc(var(--char-index) * 2rem);
+  position: absolute;
+  animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
+  }
+  @keyframes loop {
+  100% {
+    offset-distance: calc((var(--char-index) * 2rem) + 1000px);
+  }
+  50% {
+    offset-distance: calc((var(--char-index) * 2rem) + 500px);
+  }
+  }
 }  
 @media (max-width: 420px) {
   .intro__wrapper__mobile {
@@ -1492,7 +1526,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     scale: 1.8;
   }
   .intro__item.intro__item-1 {
-    top: 110px;
+    top: 140px;
     left: -2%;
     width: 50vw;
   }
