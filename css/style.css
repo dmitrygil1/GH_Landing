@@ -921,7 +921,7 @@ animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(v
 
 .intro__bg img:nth-child(3) {
   bottom: 0;
-  right: -2%;
+  right: 2%;
 }
 
 svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
@@ -1097,7 +1097,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   }
   
   .intro__bg img:nth-child(3) {
-    right: -4%;
+    left: 650px;
   }
 
   /*Настройка блока с плавающим текстом*/
@@ -1158,7 +1158,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   }
 
   .intro__bg img:nth-child(3) {
-    right: -10%;
+    left: 550px;
   }
 
   /*Настройка блока с плавающим текстом*/
@@ -1271,7 +1271,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     }
     .intro__bg img:nth-child(3) {
       bottom: -2px;
-      right: -20%;
+      left: 370px;
     }
     .intro__item.intro__item-1 {
       width: 243px;
@@ -1463,7 +1463,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
 .intro__bg img:nth-child(3) {
   scale: 0.7;
   bottom: -25px;
-  right: -170px
+  left: 110px;
   }
   .intro__item-3 {
     width: 80vw;
