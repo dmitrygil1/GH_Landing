@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- Временно спрятал предзагрузку
         <div class="loader" id="preloader_malc">
         <div>
             <img class="loader_logo" src="./images/icons/loader_static_logo.svg" alt="preloader logo">
@@ -72,7 +72,7 @@
                 document.getElementById("preloader_malc").style.display = "none";
             }, 500);
         };
-    </script>
+    </script> -->
 	
     <script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
 
@@ -114,7 +114,13 @@
             <section class="intro">
                 <div class="intro__container">
                     <div data-wow-offset="300" >
-                       <div class="wow wow slideInRight intro__wrapper intro__wrapper">
+                       <div class="intro__wrapper">
+                            <!-- Вариант с анимацией по отдельным словам. Виды анимации искать по "wow.js" запросу
+                            <img src="./images/hero_words/Кофе =.svg" alt="Быть" class="intro_wrapper_word wow slideInRight ">
+                            <img src="./images/hero_words/Быть.svg" alt="Быть" class="intro_wrapper_word wow slideInRight ">
+                            <img src="./images/hero_words/Добрым.svg" alt="Быть" class="intro_wrapper_word wow slideInRight ">
+                            -->
+                            <!--
                             <svg class="intro__wrapper__bigtext" width="1099" height="857" viewBox="0 0 1099 857" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.304 17.8003V57.0003H11.536V25.9203H29.064V57.0003H37.296V17.7443L3.304 17.8003Z" fill="white"></path>
                                 <path d="M46.5575 17.8003V57.0003H55.4055L73.2695 30.1763V57.0003H81.4455V17.8003H72.5975L54.7895 44.6243V17.8003H46.5575Z" fill="white"></path>
@@ -288,7 +294,96 @@
                                 </filter>
                                 </defs>
                             </svg>
-
+                            -->
+                            <h2 class="intro__wrapper__text words chars splitting" >
+                                <span class="word" data-word="ПИТЬ" style="--word-index:0;">
+                                    <span class="char" data-char="П" style="--char-index:0;">П</span>
+                                    <span class="char" data-char="И" style="--char-index:1;">И</span>
+                                    <span class="char" data-char="Т" style="--char-index:2;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:3;">Ь</span>
+                                </span><span class="whitespace" style="--char-index:4;"> </span>
+                                <span class="word" data-word="КОФЕ" style="--word-index:1;">
+                                    <span class="char" data-char="К" style="--char-index:5;">К</span>
+                                    <span class="char" data-char="О" style="--char-index:6;">О</span>
+                                    <span class="char" data-char="О" style="--char-index:7;">Ф</span>
+                                    <span class="char" data-char="Е" style="--char-index:8;">Е</span>
+                                </span><span class="whitespace" style="--char-index:9;"> </span>
+                                <span class="word" data-word="=" style="--word-index:2;">
+                                    <span class="char" data-char="=" style="--char-index:10;">=</span>
+                                </span><span class="whitespace" style="--char-index:11;"> </span>
+                                <span class="word" data-word="БЫТЬ" style="--word-index:3;">
+                                    <span class="char" data-char="Б" style="--char-index:12;">Б</span>
+                                    <span class="char" data-char="Ы" style="--char-index:13;">Ы</span>
+                                    <span class="char" data-char="Т" style="--char-index:14;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:15;">Ь</span>
+                                </span><span class="whitespace" style="--char-index:16;"> </span>
+                                <span class="word" data-word="ДОБРЫМ" style="--word-index:4;">
+                                    <span class="char" data-char="Д" style="--char-index:17;">Д</span>
+                                    <span class="char" data-char="О" style="--char-index:18;">О</span>
+                                    <span class="char" data-char="Б" style="--char-index:19;">Б</span>
+                                    <span class="char" data-char="Р" style="--char-index:20;">Р</span>
+                                    <span class="char" data-char="Ы" style="--char-index:21;">Ы</span>
+                                    <span class="char" data-char="М" style="--char-index:22;">М</span>
+                                </span><span class="whitespace" style="--char-index:23;"> </span>
+                                <span class="word" data-word="=" style="--word-index:5;">
+                                    <span class="char" data-char="=" style="--char-index:24;">=</span>
+                                </span><span class="whitespace" style="--char-index:25;"> </span>
+                                <span class="word" data-word="ПОМОГАТЬ" style="--word-index:6;">
+                                    <span class="char" data-char="П" style="--char-index:26;">П</span>
+                                    <span class="char" data-char="О" style="--char-index:27;">О</span>
+                                    <span class="char" data-char="М" style="--char-index:28;">М</span>
+                                    <span class="char" data-char="О" style="--char-index:29;">О</span>
+                                    <span class="char" data-char="Г" style="--char-index:30;">Г</span>
+                                    <span class="char" data-char="А" style="--char-index:31;">А</span>
+                                    <span class="char" data-char="Т" style="--char-index:32;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:33;">Ь</span>
+                                </span><span class="whitespace" style="--char-index:34;"> </span>
+                                <span class="word" data-word="=" style="--word-index:7;">
+                                    <span class="char" data-char="=" style="--char-index:35;">=</span></span>
+                                    <span class="whitespace" style="--char-index:36;"> </span>
+                                    <span class="word" data-word="ПИТЬ" style="--word-index:8;">
+                                    <span class="char" data-char="П" style="--char-index:37;">П</span>
+                                    <span class="char" data-char="И" style="--char-index:38;">И</span>
+                                    <span class="char" data-char="Т" style="--char-index:39;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:40;">Ь</span></span>
+                                <span class="whitespace" style="--char-index:41;"> </span>
+                                    <span class="word" data-word="КОФЕ" style="--word-index:9;">
+                                    <span class="char" data-char="К" style="--char-index:42;">К</span>
+                                    <span class="char" data-char="О" style="--char-index:43;">О</span>
+                                    <span class="char" data-char="Ф" style="--char-index:44;">Ф</span>
+                                    <span class="char" data-char="Е" style="--char-index:45;">Е</span></span>
+                                    <span class="whitespace" style="--char-index:46;"> </span>
+                                    <span class="word" data-word="=" style="--word-index:10;">
+                                    <span class="char" data-char="=" style="--char-index:47;">=</span></span>
+                                    <span class="whitespace" style="--char-index:48;"> </span>
+                                        <span class="word" data-word="БЫТЬ" style="--word-index:11;">
+                                    <span class="char" data-char="Б" style="--char-index:49;">Б</span>
+                                    <span class="char" data-char="Ы" style="--char-index:50;">Ы</span>
+                                    <span class="char" data-char="Т" style="--char-index:51;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:52;">Ь</span></span>
+                                    <span class="whitespace" style="--char-index:53;"> </span>
+                                    <span class="word" data-word="ДОБРЫМ" style="--word-index:12;">
+                                    <span class="char" data-char="Д" style="--char-index:54;">Д</span>
+                                    <span class="char" data-char="О" style="--char-index:55;">О</span>
+                                    <span class="char" data-char="Б" style="--char-index:56;">Б</span>
+                                    <span class="char" data-char="Р" style="--char-index:57;">Р</span>
+                                    <span class="char" data-char="Ы" style="--char-index:58;">Ы</span>
+                                    <span class="char" data-char="М" style="--char-index:59;">М</span></span>
+                                    <span class="whitespace" style="--char-index:60;"> </span>
+                                    <span class="word" data-word="=" style="--word-index:13;">
+                                    <span class="char" data-char="=" style="--char-index:61;">=</span></span>
+                                    <span class="whitespace" style="--char-index:62;"> </span>
+                                    <span class="word" data-word="ПОМОГАТЬ" style="--word-index:14;">
+                                    <span class="char" data-char="П" style="--char-index:63;">П</span>
+                                    <span class="char" data-char="О" style="--char-index:64;">О</span>
+                                    <span class="char" data-char="М" style="--char-index:65;">М</span>
+                                    <span class="char" data-char="Г" style="--char-index:67;">Г</span>
+                                    <span class="char" data-char="О" style="--char-index:66;">О</span>
+                                    <span class="char" data-char="А" style="--char-index:68;">А</span>
+                                    <span class="char" data-char="Т" style="--char-index:69;">Т</span>
+                                    <span class="char" data-char="Ь" style="--char-index:70;">Ь</span>
+                                </span>
+                            </h2>
                         <div class="intro__item intro__item-1">
                             DO.BRO COFFEE&nbsp;— 
                             Мы&nbsp;делаем добрый кофе!

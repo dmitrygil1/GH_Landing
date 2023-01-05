@@ -811,6 +811,7 @@ textarea:focus::placeholder {
 .intro__wrapper {
   position: relative;
   padding: 90px 0 133px;
+  height: 1080px;
 }
 
 .intro__wrapper > svg {
@@ -845,6 +846,32 @@ textarea:focus::placeholder {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+/* Секция с анимацией "Пить кофе..." по path*/
+.intro__wrapper__text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+}
+.char {
+
+offset-path: path('M0 1.50003H434.188C459.708 -1.3333 512.524 9.70003 519.624 76.5C526.725 143.3 433.167 168.667 385.5 173C318.333 178.5 183.84 202.62 154.5 223.5C73 281.5 55.5 223.5 43.5 458C37.179 581.523 380.598 624.394 545.999 560.382C548.37 559.464 550.513 558.248 552.564 556.746C644.527 489.385 779.707 417.423 843 410.5C879.693 406.487 907 414.5 947.5 449C1021.5 512.037 1009.5 698.5 998.5 791.5');
+offset-distance: calc(var(--char-index) * 2.5rem);
+position: absolute;
+animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 7ms);
+}
+
+@keyframes loop {
+100% {
+  offset-distance: calc((var(--char-index) * 2.5rem) + 1000px);
+  color: rgb(253, 255, 105);
+}
+700% {
+  offset-distance: calc((var(--char-index) * 2.5rem) + 1690px);
+}
 }
 
 .intro__item {
