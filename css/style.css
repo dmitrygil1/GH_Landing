@@ -1365,7 +1365,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   }
   svg.intro__wrapper__mobile {
     padding-top: 140px;
-    scale: 1.9;
+    scale: 1.8;
   }
   .intro__item.intro__item-1 {
     top: 110px;
@@ -1378,6 +1378,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   }
   .intro__item.intro__item-3{
     width: 70vw;
+    top: 590px;
   }
   .footer__wrapper {
     padding: 20px 0 0;
@@ -1388,9 +1389,15 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .support-social__list {
     padding-top: 20px;
   }
+  .intro {
+    min-height: 790px;
+  }
+  .intro__wrapper {
+    height: 790px;
+  }
 }
-@media (max-width: 400px) {
-  .intro__wrapper__mobile {
-    transform: scaleX(0.87);
+@media (max-width: 385px) {
+  svg.intro__wrapper__mobile {
+    transform: scaleX(0.9);
     }
 }
