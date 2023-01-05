@@ -661,7 +661,7 @@ textarea:focus::placeholder {
   height: 722px;
 }
 
-.hero__img img {
+.hero__img video {
   position: absolute;
   top: 0;
   left: -125px;
@@ -1157,7 +1157,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
       right: 44px;
       rotate: 30deg;
     }
-    .hero__img img {
+    .hero__img video {
       top: 162px;
       left: -220px;
     }
@@ -1308,7 +1308,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
   .hero__img {
     height: 100vw;
   }
-  .hero__img img {
+  .hero__img video {
     top: auto;
     left: auto;
     max-width: 100vw;
