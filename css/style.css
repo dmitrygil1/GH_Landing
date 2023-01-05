@@ -1340,7 +1340,7 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
 .intro__bg img:nth-child(3) {
   scale: 0.7;
   bottom: -25px;
-  right: -100px
+  right: -130px
   }
   .intro__item-3 {
     width: 80vw;
@@ -1380,4 +1380,8 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     padding-top: 20px;
   }
 }
-
+@media (max-width: 400px) {
+  .intro__wrapper__mobile {
+    transform: scaleX(0.9);
+    }
+}
