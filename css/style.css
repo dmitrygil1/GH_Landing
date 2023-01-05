@@ -1346,4 +1346,38 @@ svg.intro__wrapper__liltext, svg.intro__wrapper__mobile{
     width: 80vw;
   }
 }  
+@media (max-width: 420px) {
+  .intro__wrapper__mobile {
+  transform: scaleX(0.95);
+  }
+  .intro__bg img:nth-child(2) {
+    scale: 0.8;
+    left: -20px;
+    bottom: 85px;
+  }
+  .intro__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .intro__item.intro__item-1 {
+    left: -2%;
+    width: 60vw;
+  }
+  .intro__item.intro__item-2 {
+    top: 380px;
+    width: 70vw;
+  }
+  .intro__item.intro__item-3{
+    width: 70vw;
+  }
+  .footer__wrapper {
+    padding: 20px 0 0;
+  }
+  .footer__contacts {
+    padding-right: 20px;
+  }
+  .support-social__list {
+    padding-top: 20px;
+  }
+}
 
