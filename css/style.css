@@ -908,6 +908,7 @@ animation: loop 10000ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(v
 .intro__bg img {
   position: absolute;
   z-index: 1;
+  pointer-events: none;
 }
 
 .intro__bg img:nth-child(1) {
