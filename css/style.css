@@ -608,6 +608,10 @@ textarea:focus::placeholder {
   height: 73px;
   background-color: #000000;
 }
+.header__logos>.header__logo>img {
+  max-width: 142px;
+  height: auto;
+}
 
 .hero__container {
   max-width: 1210px;
